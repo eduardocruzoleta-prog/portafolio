@@ -61,3 +61,6 @@ a { color: var(--accent); }
 .plain {padding-left: 1.2rem; color: var(--muted); }
 .tags { display:flex; flex-wrap:wrap; gap:8px; list-style:none; margin:0; padding:0; }
 .tags li {background: var(--bg); border: 1px solid var(--border); border-radius: 999px; padding: 2px 12px; font-size: .9rem; }
+.project img { border-radius: 8px; margin-bottom: 16px; aspect-ratio: 16/9; object-fit: cover; width: 100%; }
+.project .tags { margin-bottom: 16px; }
+.links { display: flex; gap: 16px; font-weight: 600; }
