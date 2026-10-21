@@ -10,7 +10,7 @@
 
 /* Modo oscuro según el sistema */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root [data-theme="dark"] {
     --bg: #1c2230;
     --surface: #2a3140;
     --text: #f7f8fa;
@@ -53,6 +53,13 @@ a { color: var(--accent); }
 border: 1px solid var(--bordder); border-radius: 8px; paddinf: 6px 10px; cursor: pointer; 
 }
 .menu-btn { display: none; margin-left: auto; font-size: 1.2rem; }
+.tools { display: flex; gap: 8px; }
+.icon-btn, .menu-btn {
+  font: inherit; color: var(--text); background: var(--bg);
+  border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; cursor: pointer;
+}
+.menu-btn { display: none; margin-left: auto; font-size: 1.2rem; }
+
 
 /* ===== Inicio ===== */
 .hero { display:flex; align-items:center; gap:48px; padding: 72px 0; } 

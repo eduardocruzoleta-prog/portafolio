@@ -1,3 +1,9 @@
+// ===== Modo claro / oscuro =====
+document.getElementById('theme-btn').addEventListener('click', () => {
+  const root = document.documentElement;
+  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+});
+
 // ===== Menú móvil =====
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.getElementById('menu');
