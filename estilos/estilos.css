@@ -8,6 +8,18 @@
   --border: #e1e5ec;
 }
 
+/* Modo oscuro según el sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c2230;
+    --surface: #2a3140;
+    --text: #f7f8fa;
+    --muted: #a0a7b8;
+    --accent: #5d8bf4;
+    --border: #3a4150;
+  }
+}
+
 /* ===== Base ===== */
 * { box-sizing: border-box; }
 body {
