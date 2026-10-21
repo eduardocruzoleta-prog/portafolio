@@ -37,6 +37,10 @@ a { color: var(--accent); }
 .menu { display:flex; gap:24px; list-style: none; margin:0 0 0 auto; padding:0; }
 .menu a {color: var(--text); text-decoration: none; font-weight: 500; }
 .menu a:hover { color: var(--accent); }
+.menu-btn {font: inherit; color: var(--accent); background: var(--bg);
+border: 1px solid var(--bordder); border-radius: 8px; paddinf: 6px 10px; cursor: pointer; 
+}
+.menu-btn { display: none; margin-left: auto; font-size: 1.2rem; }
 
 /* ===== Inicio ===== */
 .hero { display:flex; align-items:center; gap:48px; padding: 72px 0; } 
@@ -75,7 +79,14 @@ a { color: var(--accent); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
 }
 @media(max-width: 768px) {
-  .menu { display: none; }
+  .menu-btn { display: block; }
+  .menu {
+    display: none; position: absolute; top:64px; left: 0; right: 0;
+    flex-direction: column; gap: 0; background: var(--surface);
+    border-bottom: 1px solid var(--border); margin: 0;
+  }
+  .menu.open { display: flex; }
+  .mena a {display: block; padding: 14px 16px}
   .hero { flex-direction: column; text-align: center; gap: 24px; padding: 48px 0; }
   .avatar { width: 160px; height: 160px; }
   .actions { justify-content: center; }
