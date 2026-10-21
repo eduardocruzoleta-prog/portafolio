@@ -69,3 +69,16 @@ a { color: var(--accent); }
 .contact { text-align: center; }
 .contact-list { display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; list-style: none; padding: 0; font-weight: 600; }
 .footer { text-align: center; padding: 24px; color: var(--muted); border-top: 1px solid var(--border); }
+
+/* ===== Responsive ===== */
+@media(max-width: 900px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width: 768px) {
+  .menu { display: none; }
+  .hero { flex-direction: column; text-align: center; gap: 24px; padding: 48px 0; }
+  .avatar { width: 160px; height: 160px; }
+  .actions { justify-content: center; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .section { padding: 48px 0; }
+}
