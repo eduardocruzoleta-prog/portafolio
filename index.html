@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio web de Eduardo Cruz Oleta, desarrollador web front-end" data-i18n-content="meta.description">
     <link rel="stylesheet" href="estilos/estilos.css">
+    <!-- Aplica el tema guardado antes de dibujar, para evitar parpadeo -->
+     <script>
+        try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+     </script>
     <title data-i18n="meta.title">Eduardo Cruz Oleta | Portafolio</title>
 </head>
 <body>
+    <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
     <header class="header">
         <nav class="nav container" aria-label="Principal" data-i18n-aria-label="nav.label">
             <a href="#inicio" class="logo" aria-label="Inicio" data-i18n-aria-label="nav.inicio">EC</a>

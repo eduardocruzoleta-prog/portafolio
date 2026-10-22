@@ -96,9 +96,11 @@ function setLang(lang) {
   });
   document.documentElement.lang = lang;
   langSelect.value = lang;
+  try { localStorage.setItem('lang', lang); } catch (e) {}
 }
 
 langSelect.addEventListener('change', e => setLang(e.target.value));
+try { setLang(localStorage.getItem('lang') || 'es');} catch (e) { setLang('es'); }
 
 // ===== Modo claro / oscuro =====
 document.getElementById('theme-btn').addEventListener('click', () => {
@@ -107,6 +109,7 @@ document.getElementById('theme-btn').addEventListener('click', () => {
     ? root.dataset.theme === 'dark'
     : matchMedia('(prefers-color-scheme: dark)').matches;
   root.dataset.theme = isDark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
 });
 
 // ===== Menú móvil =====
