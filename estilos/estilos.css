@@ -6,18 +6,29 @@
   --muted: #5a6475;
   --accent: #2357d9;
   --border: #e1e5ec;
+  color-scheme: light;
 }
 
 /* Modo oscuro según el sistema */
 @media (prefers-color-scheme: dark) {
-  :root [data-theme="dark"] {
-    --bg: #1c2230;
-    --surface: #2a3140;
-    --text: #f7f8fa;
-    --muted: #a0a7b8;
-    --accent: #5d8bf4;
-    --border: #3a4150;
+  :root:not([data-theme="light"]) {
+    --bg: #11151c;
+    --surface: #1a2029;
+    --text: #e8ecf2;
+    --muted: #a0aabb;
+    --accent: #6f9bff;
+    --border: #2b3340;
+    color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+  --bg: #11151c;
+  --surface: #1a2029;
+  --text: #e8ecf2;
+  --muted: #a0aabb;
+  --accent: #6f9bff;
+  --border: #2b3340;
+  color-scheme: dark;
 }
 
 /* ===== Base ===== */
@@ -54,7 +65,7 @@ border: 1px solid var(--bordder); border-radius: 8px; paddinf: 6px 10px; cursor:
 }
 .menu-btn { display: none; margin-left: auto; font-size: 1.2rem; }
 .tools { display: flex; gap: 8px; }
-.icon-btn, .menu-btn {
+select, .icon-btn, .menu-btn {
   font: inherit; color: var(--text); background: var(--bg);
   border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; cursor: pointer;
 }

@@ -3,79 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio web de Eduardo Cruz Oleta, desarrollador web front-end">
+    <meta name="description" content="Portafolio web de Eduardo Cruz Oleta, desarrollador web front-end" data-i18n-content="meta.description">
     <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Eduardo Cruz Oleta | Portafolio</title>
+    <title data-i18n="meta.title">Eduardo Cruz Oleta | Portafolio</title>
 </head>
 <body>
     <header class="header">
-        <nav class="nav container" aria-label="Principal">
-            <a href="#inicio" class="logo" aria-label="Inicio">EC</a>
-            <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
+        <nav class="nav container" aria-label="Principal" data-i18n-aria-label="nav.label">
+            <a href="#inicio" class="logo" aria-label="Inicio" data-i18n-aria-label="nav.inicio">EC</a>
+            <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú" data-i18n-aria-label="nav.abrirMenu">☰</button>
             <ul class="menu" id="menu">
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#certificaciones">Certificaciones</a></li>
-                <li><a href="#contacto">Contactos</a></li>
+                <li><a href="#sobre-mi" data-i18n="nav.sobreMi">Sobre mí</a></li>
+                <li><a href="#habilidades" data-i18n="nav.habilidades">Habilidades</a></li>
+                <li><a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a></li>
+                <li><a href="#certificaciones" data-i18n="nav.certificaciones">Certificaciones</a></li>
+                <li><a href="#contacto" data-i18n="nav.contacto">Contactos</a></li>
             </ul>
-            <div class="tools">
-                <button id="theme-btn" class="icon-btn" aria-label="Cambiar tema claro u oscuro">◐</button>
-            </div>
-            </div>
-        </nav>
-    </header>
+        <div class="tools">
+        <label class="sr-only" for="lang" data-i18n="langLabel">Idioma</label>
+        <select id="lang">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+        </select>
+        <button id="theme-btn" class="icon-btn" aria-label="Cambiar tema claro u oscuro">◐</button>
+      </div>
+    </nav>
+  </header>
+
 
     <main>
     <!-- INICIO -->
     <section id="inicio" class="hero container">
-      <img class="avatar" src="img/foto.jpg" alt="Fotografía de Eduardo Cruz Oleta" width="220" height="220">
+      <img class="avatar" src="img/foto.jpg" alt="Fotografía de Eduardo Cruz Oleta" data-i18n-alt="hero.fotoAlt" width="220" height="220">
       <div>
-        <p class="eyebrow">Hola, soy</p>
+        <p class="eyebrow" data-i18n="hero.saludo">Hola, soy</p>
         <h1>Eduardo Cruz Oleta</h1>
-        <p class="role">Desarrollador Web Front-End</p>
-        <p>Estudiante de Ingeniería en Tecnologías de la Información de la Universidad Politécnica de Sinaloa. Construyo sitios web accesibles, rápidos y adaptables a cualquier pantalla.</p>
+        <p class="role" data-i18n="hero.rol">Desarrollador Web Front-End</p>
+        <p data-i18n="hero.descripcion">Estudiante de Ingeniería en Tecnologías de la Información de la Universidad Politécnica de Sinaloa. Construyo sitios web accesibles, rápidos y adaptables a cualquier pantalla.</p>
         <div class="actions">
-          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Ver CV (PDF)</a>
-          <a class="btn btn-outline" href="#contacto">Contáctame</a>
+          <a class="btn" href="cv.pdf" target="_blank" rel="noopener" data-i18n="hero.verCV">Ver CV (PDF)</a>
+          <a class="btn btn-outline" href="#contacto" data-i18n="hero.contactame">Contáctame</a>
         </div>
       </div>
     </section>
 
     <section id="sobre-mi" class="section container">
-        <h2>Sobre mí</h2>
+        <h2 data-i18n="sobre.titulo">Sobre mí</h2>
         <div class="grid-2">
             <div>
-                <p>Soy estudiante de Ingeniería en Tecnologías de la Información. Me interesa el desarrollo web y la creación de interfaces claras y fáciles de usar.</p>
-                <p>Me considero una persona responsable y curiosa. Disfruto de resolver problemas, trabajar en equipo y aprender nuevas tecnologías.</p>
+                <p data-i18n="sobre.p1">Soy estudiante de Ingeniería en Tecnologías de la Información. Me interesa el desarrollo web y la creación de interfaces claras y fáciles de usar.</p>
+                <p data-i18n="sobre.p2">Me considero una persona responsable y curiosa. Disfruto de resolver problemas, trabajar en equipo y aprender nuevas tecnologías.</p>
             </div>
             <div class="card">
-                <h3>Formación</h3>
-                <p><strong>Ingeniería en Tecnologías de la Información e Innovación Digital</strong><br>
-                    Universidad Politécnica de Sinaloa · 2025 - <span>actualidad</span> </p>
-                <h3>Idiomas</h3>
+                <h3 data-i18n="sobre.formacion">Formación</h3>
+                <p><strong data-i18n="sobre.carrera">Ingeniería en Tecnologías de la Información e Innovación Digital</strong><br>
+                    Universidad Politécnica de Sinaloa · 2025 - <span data-i18n="sobre.actualidad">actualidad</span></p>
+                <h3 data-i18n="sobre.idiomas">Idiomas</h3>
                 <ul class="plain">
-                    <li>Español - nativo</li>
-                    <li>Inglés - intermedio</li>
+                    <li data-i18n="sobre.espanol">Español - nativo</li>
+                    <li data-i18n="sobre.ingles">Inglés - intermedio</li>
                 </ul>
             </div>
         </div>
     </section>
-    
+
     <!-- HABILIDADES -->
     <section id="habilidades" class="section container">
-        <h2>Habilidades</h2>
+        <h2 data-i18n="habilidades.titulo">Habilidades</h2>
         <div class="grid-3">
             <div class="card">
-                <h3>Lenguajes</h3>
+                <h3 data-i18n="habilidades.lenguajes">Lenguajes</h3>
                 <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C++</li><li>SQL</li></ul>
             </div>
             <div class="card">
-                <h3>Desarrollo web</h3>
+                <h3 data-i18n="habilidades.web">Desarrollo web</h3>
                 <ul class="tags"><li>Flexbox</li><li>CSS Grid</li><li>Responsive Design</li><li>Media Queries</li></ul>
             </div>
             <div class="card">
-                <h3>Herramientas</h3>
+                <h3 data-i18n="habilidades.herramientas">Herramientas</h3>
                 <ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Figma</li><li>Netlify</li></ul>
             </div>
         </div>
@@ -83,26 +89,26 @@
 
     <!-- PROYECTOS -->
     <section id="proyectos" class="section container">
-        <h2>Proyectos</h2>
+        <h2 data-i18n="proyectos.titulo">Proyectos</h2>
         <div class="grid-2">
             <article class="card project">
-                <img src="img/technova.png" alt="Página de inicio de la tienda TechNova" loading="lazy" width="1280" height="720">
-                <h3>TechNova: tienda en línea</h3>
-                <p>Tienda de accesorios tecnológicos en línea con página de inicio y catálogo. Maqueté la portada, los beneficios y las categorías con Flexbox y Grid.</p>
+                <img src="img/technova.png" alt="Página de inicio de la tienda TechNova" data-i18n-alt="proyectos.technova.alt" loading="lazy" width="1280" height="720">
+                <h3 data-i18n="proyectos.technova.titulo">TechNova: tienda en línea</h3>
+                <p data-i18n="proyectos.technova.descripcion">Tienda de accesorios tecnológicos en línea con página de inicio y catálogo. Maqueté la portada, los beneficios y las categorías con Flexbox y Grid.</p>
                 <ul class="tags"><li>HTML</li><li>CSS</li><li>Flexbox</li><li>Grid</li></ul>
                 <div class="links">
-                    <a href="https://github.com/eduardocruzoleta-prog/technova" target="_blank" rel="noopener">Código</a>
-                    <a href="https://technova-eduardocruz.netlify.app/" target="_blank" rel="noopener">Demo</a>
+                    <a href="https://github.com/eduardocruzoleta-prog/technova" target="_blank" rel="noopener" data-i18n="proyectos.codigo">Código</a>
+                    <a href="https://technova-eduardocruz.netlify.app/" target="_blank" rel="noopener" data-i18n="proyectos.demo">Demo</a>
                 </div>
             </article>
             <article class="card project">
-                <img src="img/laberinto.png" alt="Laberinto animado con CSS" loading="lazy" width="1280" height="720">
-                <h3>Laberinto animado con CSS</h3>
-                <p>Al presionar el botón, una figura recorre el laberinto sola: se convierte en círculo para caber en los pasillos y sale como estrella que gira y cambia de color.</p>
-                <ul class="tags"><li>HTML</li><li>CSS</li><li>@keyframes</li><li>Sin JavaScript</li></ul>
+                <img src="img/laberinto.png" alt="Laberinto animado con CSS" data-i18n-alt="proyectos.laberinto.alt" loading="lazy" width="1280" height="720">
+                <h3 data-i18n="proyectos.laberinto.titulo">Laberinto animado con CSS</h3>
+                <p data-i18n="proyectos.laberinto.descripcion">Al presionar el botón, una figura recorre el laberinto sola: se convierte en círculo para caber en los pasillos y sale como estrella que gira y cambia de color.</p>
+                <ul class="tags"><li>HTML</li><li>CSS</li><li>@keyframes</li><li data-i18n="proyectos.laberinto.sinJS">Sin JavaScript</li></ul>
                 <div class="links">
-                    <a href="https://github.com/eduardocruzoleta-prog/laberinto-css" target="_blank" rel="noopener">Código</a>
-                    <a href="https://laberinto-eduardocruz.netlify.app/" target="_blank" rel="noopener">Demo</a>
+                    <a href="https://github.com/eduardocruzoleta-prog/laberinto-css" target="_blank" rel="noopener" data-i18n="proyectos.codigo">Código</a>
+                    <a href="https://laberinto-eduardocruz.netlify.app/" target="_blank" rel="noopener" data-i18n="proyectos.demo">Demo</a>
                 </div>
             </article>
         </div>
@@ -110,20 +116,20 @@
 
     <!-- CERTIFICACIONES -->
     <section id="certificaciones" class="section container">
-        <h2>Certificaciones</h2>
+        <h2 data-i18n="certificaciones.titulo">Certificaciones</h2>
         <div class="grid-3">
             <div class="card">
-                <h3>Nombre de la certificación</h3>
-                <p>Institución que la otorgó · 2026</p>
-                <a href="certificados/cert1.pdf" target="_blank" rel="noopener">Ver certificado</a>
+                <h3 data-i18n="certificaciones.cert1.nombre">Nombre de la certificación</h3>
+                <p data-i18n="certificaciones.cert1.institucion">Institución que la otorgó · 2026</p>
+                <a href="certificados/cert1.pdf" target="_blank" rel="noopener" data-i18n="certificaciones.ver">Ver certificado</a>
             </div>
         </div>
     </section>
 
     <!-- CONTACTOS -->
     <section id="contacto" class="section container contact">
-        <h2>Contactos</h2>
-        <p>¿Quieres contactarme?</p>
+        <h2 data-i18n="contacto.titulo">Contactos</h2>
+        <p data-i18n="contacto.pregunta">¿Quieres contactarme?</p>
         <ul class="contact-list">
             <li><a href="mailto:eduardo.cruz.oleta@gmail.com">eduardo.cruz.oleta@gmail.com</a></li>
             <li><a href="https://github.com/eduardocruzoleta-prog" target="_blank" rel="noopener">GitHub</a></li>
