@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio web de Eduardo Cruz Oleta, desarrollador web front-end" data-i18n-content="meta.description">
     <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <!-- Aplica el tema guardado antes de dibujar, para evitar parpadeo -->
      <script>
         try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -15,7 +16,9 @@
     <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
     <header class="header">
         <nav class="nav container" aria-label="Principal" data-i18n-aria-label="nav.label">
-            <a href="#inicio" class="logo" aria-label="Inicio" data-i18n-aria-label="nav.inicio">EC</a>
+            <a href="#inicio" class="logo" aria-label="Inicio" data-i18n-aria-label="nav.inicio">
+                <img src="img/logo.png" alt="" width="36" height="36">
+            </a>
             <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú" data-i18n-aria-label="nav.abrirMenu">☰</button>
             <ul class="menu" id="menu">
                 <li><a href="#sobre-mi" data-i18n="nav.sobreMi">Sobre mí</a></li>
