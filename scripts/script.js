@@ -40,6 +40,8 @@ const translations = {
     'certificaciones.ver': 'View certificate',
     'contacto.titulo': 'Contact',
     'contacto.pregunta': 'Want to get in touch?',
+    'certificaciones.titulo': 'Certifications',
+    'certificaciones.ver': 'View certificate',
   },
   fr: {
     'meta.title': 'Eduardo Cruz Oleta | Portfolio',
@@ -79,6 +81,8 @@ const translations = {
     'certificaciones.ver': 'Voir le certificat',
     'contacto.titulo': 'Contact',
     'contacto.pregunta': 'Vous voulez me contacter ?',
+    'certificaciones.titulo': 'Certifications',
+    'certificaciones.ver': 'Voir le certificat',
   },
 };
 
